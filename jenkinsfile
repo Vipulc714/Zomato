@@ -39,10 +39,10 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
-                ssh -o StrictHostKeyChecking=no ubuntu@13.203.97.206 << 'EOF'
+                ssh -o StrictHostKeyChecking=no ubuntu@13.203.97.206 "
                 sudo KUBECONFIG=/etc/kubernetes/admin.conf kubectl rollout restart deployment/zomato
                 sudo KUBECONFIG=/etc/kubernetes/admin.conf kubectl rollout status deployment/zomato
-                EOF
+                "
                 '''
             }
         }
