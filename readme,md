@@ -1,0 +1,12 @@
+## Webhook Test
+
+This repository is used for practicing a complete DevOps CI/CD pipeline using:
+
+- Jenkins
+- Docker
+- Kubernetes
+- Prometheus
+- Grafana
+- GitHub Webhooks
+
+Last webhook test: August 2026
